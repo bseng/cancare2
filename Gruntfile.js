@@ -67,6 +67,26 @@ module.exports = function (grunt) {
         ]
       }
     },
+    buildcontrol: {
+       options: {
+          dir: 'dist',
+          commit: true,
+          push: true,
+          message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+       },
+       pages: {
+          options: {
+             remote: 'git@github.com:bseng/cancare2.git',
+             branch: 'gh-pages'
+          }
+       },
+       local: {
+          options: {
+             remote: '../',
+             branch: 'build'
+          }
+       }
+    },
 
     // The actual grunt server settings
     connect: {
