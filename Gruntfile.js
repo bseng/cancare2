@@ -76,7 +76,7 @@ module.exports = function (grunt) {
        },
        pages: {
           options: {
-             remote: 'bseng@github.com:bseng/cancare2.git',
+             remote: 'git@github.com:bseng/cancare2.git',
              branch: 'gh-pages'
           }
        },
