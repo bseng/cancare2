@@ -1,0 +1,1 @@
+!function(a){a(function(){a(".button-collapse").sideNav(),a(".parallax").parallax(),a("select").material_select(),a(".datepicker").pickadate({selectMonths:!0,selectYears:15})})}(jQuery);
